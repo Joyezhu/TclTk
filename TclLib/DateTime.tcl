@@ -25,3 +25,10 @@ proc logTime {} {
 	# [2013-08-20 12:05:26]
 	return [clock format [clock seconds] -format "\[%Y-%m-%d %T\]"]
 }
+
+proc dayTimeWithDay {}
+{
+
+	# 09/10/2014 05:00:00 PM
+	return [clock format [clock scan] -format "%A"]
+}
